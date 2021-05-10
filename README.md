@@ -2,17 +2,15 @@
 
 ![surfs-up.png](Images/surfs-up.png)
 
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
-
 ## Step 1 - Climate Analysis and Exploration
 
-To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
+To begin, used Python and SQLAlchemy to do basic climate analysis and data exploration of the climate database. All of the following analysis completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
-* Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
+* Choose a start date and end date for the trip. Made sure that the vacation range is approximately 3-15 days total.
 
-* Used SQLAlchemy `create_engine` to connect to our sqlite database.
+* Used SQLAlchemy `create_engine` to connect to the sqlite database.
 
-* Used SQLAlchemy `automap_base()` to reflect our tables into classes and save a reference to those classes called `Station` and `Measurement`.
+* Used SQLAlchemy `automap_base()` to reflect the tables into classes and saved a reference to those classes called `Station` and `Measurement`.
 
 ### Precipitation Analysis
 
@@ -52,7 +50,7 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
 ## Step 2 - Climate App
 
-* Used Flask to create our routes which are as follow:
+* Used Flask to create routes which are as follow:
 
 ### Routes
 
@@ -66,7 +64,7 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
   * Convert the query results to a dictionary using `date` as the key and `prcp` as the value.
 
-  * Return the JSON representation of your dictionary.
+  * Return the JSON representation of the dictionary.
 
 * `/api/v1.0/stations`
 
@@ -76,6 +74,7 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
   * Query the dates and temperature observations of the most active station for the last year of data.
   
   * Return a JSON list of temperature observations (TOBS) for the previous year.
+  
 
 * `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`
 
