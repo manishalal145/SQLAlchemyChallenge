@@ -94,3 +94,13 @@ To begin, used Python and SQLAlchemy to do basic climate analysis and data explo
   * When given the start only, calculated `TMIN`, `TAVG`, and `TMAX` for all dates greater than and equal to the start date.
 
   * When given the start and the end date, calculated the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
+
+## Temperature Analysis II<br/>
+The calc_temps function used to calculate the min, avg, and max temperatures for the trip using the matching dates from the previous year (i.e.,"2017-01-01" if the trip start date was "2018-01-01").
+
+The min, avg, and max temperature from the previous query used to plot a bar chart, the average temperature used as the bar heigh, and the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR). The plot looks as follows:</br>
+![precipitation](Images/image7.png)
+
+## Daily Rainfall Average
+The rainfall per weather station, and the daily normals are calculated, normals are the averages for the min, avg, and max temperatures. A function called daily_normals is used to calculate the daily normals for a specific a given date list for the trip. This dates string are in the format of %m-%d. The list of daily normals also loded into a Pandas DataFrame, indexed equal to the date, and an area plot is conducted (stacked=False) for the daily normals. The plot looks as follow:<br/>
+![precipitation](Images/image8.png)
